@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uUj-iv-wdX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Didot.ttc">
+            <string>Didot-Bold</string>
+        </array>
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+        <array key="Optima.ttc">
+            <string>Optima-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Eropa Table View Controller-->
+        <scene sceneID="8sm-PL-RJJ">
+            <objects>
+                <tableViewController id="1i3-hx-ws9" customClass="EropaTableViewController" customModule="EuropaRecipt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ton-GU-vhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellEropa" rowHeight="66" id="3OO-o6-Sft" customClass="EropaTableViewCell" customModule="EuropaRecipt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3OO-o6-Sft" id="RVm-0Y-3ut">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqN-ph-Haw">
+                                            <rect key="frame" x="8" y="8" width="359" height="39.5"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pqN-ph-Haw" firstAttribute="top" secondItem="RVm-0Y-3ut" secondAttribute="topMargin" id="5OC-JD-Cdt"/>
+                                        <constraint firstItem="pqN-ph-Haw" firstAttribute="leading" secondItem="RVm-0Y-3ut" secondAttribute="leadingMargin" id="bdq-P5-Yhf"/>
+                                        <constraint firstItem="pqN-ph-Haw" firstAttribute="trailing" secondItem="RVm-0Y-3ut" secondAttribute="trailingMargin" id="dRs-ty-pDT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pqN-ph-Haw" secondAttribute="bottom" constant="10" id="i6T-Vz-E15"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblNama" destination="pqN-ph-Haw" id="fFe-Ed-b4a"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1i3-hx-ws9" id="tMO-3I-xII"/>
+                            <outlet property="delegate" destination="1i3-hx-ws9" id="JCt-0w-Uzn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="E9R-m0-Aop"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="passData" id="Q25-NJ-FjS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vh1-22-IZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="91.304347826086968"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EuropaRecipt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nama resep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXG-cm-GlR">
+                                <rect key="frame" x="16" y="86" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhP-BY-ZMg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Detail Recipt" id="cKR-bD-PVu"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bahan:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urC-DJ-JEp">
+                                <rect key="frame" x="16" y="134" width="111" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9h-Yq-WAG">
+                                <rect key="frame" x="16" y="172.5" width="343" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="7gM-JQ-Hku"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cara Masak:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvr-48-Zky">
+                                <rect key="frame" x="16" y="363" width="122" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvO-fV-z65">
+                                <rect key="frame" x="16" y="393" width="349" height="190"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="urC-DJ-JEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4wi-eO-WWL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RvO-fV-z65" secondAttribute="bottom" constant="84" id="50t-sH-WOd"/>
+                            <constraint firstItem="urC-DJ-JEp" firstAttribute="top" secondItem="VXG-cm-GlR" secondAttribute="bottom" constant="27.5" id="58y-34-iQ0"/>
+                            <constraint firstItem="VXG-cm-GlR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5NJ-lv-q3q"/>
+                            <constraint firstItem="Hvr-48-Zky" firstAttribute="top" secondItem="j9h-Yq-WAG" secondAttribute="bottom" constant="20.5" id="7PE-Ri-31w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VXG-cm-GlR" secondAttribute="trailing" constant="16" id="7Xq-EZ-IES"/>
+                            <constraint firstItem="AhP-BY-ZMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ian-0C-2lW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RvO-fV-z65" secondAttribute="trailing" constant="10" id="Jtq-nC-Q21"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="urC-DJ-JEp" secondAttribute="trailing" constant="248" id="SlR-Ao-qQq"/>
+                            <constraint firstItem="AhP-BY-ZMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VhO-8P-U6D"/>
+                            <constraint firstItem="j9h-Yq-WAG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aEl-Sm-NAP"/>
+                            <constraint firstItem="Hvr-48-Zky" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="blz-c5-zfS"/>
+                            <constraint firstItem="RvO-fV-z65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eYu-CG-yE0"/>
+                            <constraint firstItem="AhP-BY-ZMg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m1t-eM-hqg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9h-Yq-WAG" secondAttribute="trailing" constant="16" id="o16-h8-hUk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hvr-48-Zky" secondAttribute="trailing" constant="237" id="peU-Lh-e8a"/>
+                            <constraint firstItem="j9h-Yq-WAG" firstAttribute="top" secondItem="urC-DJ-JEp" secondAttribute="bottom" constant="17" id="ugE-f7-wYc"/>
+                            <constraint firstItem="VXG-cm-GlR" firstAttribute="top" secondItem="AhP-BY-ZMg" secondAttribute="bottom" constant="22" id="uh8-z6-cbK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblBahan" destination="j9h-Yq-WAG" id="HTw-Tj-wLv"/>
+                        <outlet property="lblCara" destination="RvO-fV-z65" id="XsM-yD-2jp"/>
+                        <outlet property="lblNama" destination="VXG-cm-GlR" id="Eel-dS-tlg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="121.88905547226388"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hDc-Ga-kyb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uUj-iv-wdX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bz7-MM-Pid">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1i3-hx-ws9" kind="relationship" relationship="rootViewController" id="usJ-9B-a7d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qj2-Qs-1d0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-552" y="83.658170914542737"/>
+        </scene>
+    </scenes>
+</document>

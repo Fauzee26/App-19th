@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A032ABE81FCCFA2900C98E1C /* EropaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032ABE71FCCFA2900C98E1C /* EropaTableViewCell.swift */; };
+		A032ABEA1FCCFA6E00C98E1C /* EropaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032ABE91FCCFA6E00C98E1C /* EropaTableViewController.swift */; };
+		A04888161FCA6E50008E08A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04888151FCA6E50008E08A1 /* AppDelegate.swift */; };
+		A04888181FCA6E50008E08A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04888171FCA6E50008E08A1 /* ViewController.swift */; };
+		A048881B1FCA6E50008E08A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04888191FCA6E50008E08A1 /* Main.storyboard */; };
+		A048881D1FCA6E50008E08A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A048881C1FCA6E50008E08A1 /* Assets.xcassets */; };
+		A04888201FCA6E50008E08A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A048881E1FCA6E50008E08A1 /* LaunchScreen.storyboard */; };
+		A048882B1FCA6E50008E08A1 /* EuropaReciptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048882A1FCA6E50008E08A1 /* EuropaReciptTests.swift */; };
+		A04888361FCA6E50008E08A1 /* EuropaReciptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04888351FCA6E50008E08A1 /* EuropaReciptUITests.swift */; };
+		C41A36A3F77EB8FFF6EFA1B5 /* Pods_EuropaRecipt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D2B3738E3E18764FDBD27 /* Pods_EuropaRecipt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A04888271FCA6E50008E08A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A048880A1FCA6E50008E08A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A04888111FCA6E50008E08A1;
+			remoteInfo = EuropaRecipt;
+		};
+		A04888321FCA6E50008E08A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A048880A1FCA6E50008E08A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A04888111FCA6E50008E08A1;
+			remoteInfo = EuropaRecipt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28AF46D4F7FFB500541E766C /* Pods-EuropaRecipt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EuropaRecipt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EuropaRecipt/Pods-EuropaRecipt.debug.xcconfig"; sourceTree = "<group>"; };
+		3A7D2B3738E3E18764FDBD27 /* Pods_EuropaRecipt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EuropaRecipt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A032ABE71FCCFA2900C98E1C /* EropaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EropaTableViewCell.swift; sourceTree = "<group>"; };
+		A032ABE91FCCFA6E00C98E1C /* EropaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EropaTableViewController.swift; sourceTree = "<group>"; };
+		A04888121FCA6E50008E08A1 /* EuropaRecipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuropaRecipt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04888151FCA6E50008E08A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A04888171FCA6E50008E08A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A048881A1FCA6E50008E08A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A048881C1FCA6E50008E08A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A048881F1FCA6E50008E08A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A04888211FCA6E50008E08A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04888261FCA6E50008E08A1 /* EuropaReciptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuropaReciptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A048882A1FCA6E50008E08A1 /* EuropaReciptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropaReciptTests.swift; sourceTree = "<group>"; };
+		A048882C1FCA6E50008E08A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04888311FCA6E50008E08A1 /* EuropaReciptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuropaReciptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04888351FCA6E50008E08A1 /* EuropaReciptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropaReciptUITests.swift; sourceTree = "<group>"; };
+		A04888371FCA6E50008E08A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C995ADCFF076B38021D6B760 /* Pods-EuropaRecipt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EuropaRecipt.release.xcconfig"; path = "Pods/Target Support Files/Pods-EuropaRecipt/Pods-EuropaRecipt.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A048880F1FCA6E50008E08A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41A36A3F77EB8FFF6EFA1B5 /* Pods_EuropaRecipt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04888231FCA6E50008E08A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A048882E1FCA6E50008E08A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		178FCAB22BACF7FAFB0D8679 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28AF46D4F7FFB500541E766C /* Pods-EuropaRecipt.debug.xcconfig */,
+				C995ADCFF076B38021D6B760 /* Pods-EuropaRecipt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A04888091FCA6E50008E08A1 = {
+			isa = PBXGroup;
+			children = (
+				A04888141FCA6E50008E08A1 /* EuropaRecipt */,
+				A04888291FCA6E50008E08A1 /* EuropaReciptTests */,
+				A04888341FCA6E50008E08A1 /* EuropaReciptUITests */,
+				A04888131FCA6E50008E08A1 /* Products */,
+				178FCAB22BACF7FAFB0D8679 /* Pods */,
+				C36B45B8FB1AF537F4E16FFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A04888131FCA6E50008E08A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A04888121FCA6E50008E08A1 /* EuropaRecipt.app */,
+				A04888261FCA6E50008E08A1 /* EuropaReciptTests.xctest */,
+				A04888311FCA6E50008E08A1 /* EuropaReciptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A04888141FCA6E50008E08A1 /* EuropaRecipt */ = {
+			isa = PBXGroup;
+			children = (
+				A04888151FCA6E50008E08A1 /* AppDelegate.swift */,
+				A04888171FCA6E50008E08A1 /* ViewController.swift */,
+				A04888191FCA6E50008E08A1 /* Main.storyboard */,
+				A032ABE91FCCFA6E00C98E1C /* EropaTableViewController.swift */,
+				A032ABE71FCCFA2900C98E1C /* EropaTableViewCell.swift */,
+				A048881C1FCA6E50008E08A1 /* Assets.xcassets */,
+				A048881E1FCA6E50008E08A1 /* LaunchScreen.storyboard */,
+				A04888211FCA6E50008E08A1 /* Info.plist */,
+			);
+			path = EuropaRecipt;
+			sourceTree = "<group>";
+		};
+		A04888291FCA6E50008E08A1 /* EuropaReciptTests */ = {
+			isa = PBXGroup;
+			children = (
+				A048882A1FCA6E50008E08A1 /* EuropaReciptTests.swift */,
+				A048882C1FCA6E50008E08A1 /* Info.plist */,
+			);
+			path = EuropaReciptTests;
+			sourceTree = "<group>";
+		};
+		A04888341FCA6E50008E08A1 /* EuropaReciptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A04888351FCA6E50008E08A1 /* EuropaReciptUITests.swift */,
+				A04888371FCA6E50008E08A1 /* Info.plist */,
+			);
+			path = EuropaReciptUITests;
+			sourceTree = "<group>";
+		};
+		C36B45B8FB1AF537F4E16FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D2B3738E3E18764FDBD27 /* Pods_EuropaRecipt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A04888111FCA6E50008E08A1 /* EuropaRecipt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A048883A1FCA6E50008E08A1 /* Build configuration list for PBXNativeTarget "EuropaRecipt" */;
+			buildPhases = (
+				3F4E41047D50CED3D69A11F6 /* [CP] Check Pods Manifest.lock */,
+				A048880E1FCA6E50008E08A1 /* Sources */,
+				A048880F1FCA6E50008E08A1 /* Frameworks */,
+				A04888101FCA6E50008E08A1 /* Resources */,
+				B9C065A386417FFD22A3668F /* [CP] Embed Pods Frameworks */,
+				1B4C3E80F400F6D77AC21899 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EuropaRecipt;
+			productName = EuropaRecipt;
+			productReference = A04888121FCA6E50008E08A1 /* EuropaRecipt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A04888251FCA6E50008E08A1 /* EuropaReciptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A048883D1FCA6E50008E08A1 /* Build configuration list for PBXNativeTarget "EuropaReciptTests" */;
+			buildPhases = (
+				A04888221FCA6E50008E08A1 /* Sources */,
+				A04888231FCA6E50008E08A1 /* Frameworks */,
+				A04888241FCA6E50008E08A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04888281FCA6E50008E08A1 /* PBXTargetDependency */,
+			);
+			name = EuropaReciptTests;
+			productName = EuropaReciptTests;
+			productReference = A04888261FCA6E50008E08A1 /* EuropaReciptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A04888301FCA6E50008E08A1 /* EuropaReciptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04888401FCA6E50008E08A1 /* Build configuration list for PBXNativeTarget "EuropaReciptUITests" */;
+			buildPhases = (
+				A048882D1FCA6E50008E08A1 /* Sources */,
+				A048882E1FCA6E50008E08A1 /* Frameworks */,
+				A048882F1FCA6E50008E08A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04888331FCA6E50008E08A1 /* PBXTargetDependency */,
+			);
+			name = EuropaReciptUITests;
+			productName = EuropaReciptUITests;
+			productReference = A04888311FCA6E50008E08A1 /* EuropaReciptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A048880A1FCA6E50008E08A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Hilmy Corp.";
+				TargetAttributes = {
+					A04888111FCA6E50008E08A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					A04888251FCA6E50008E08A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A04888111FCA6E50008E08A1;
+					};
+					A04888301FCA6E50008E08A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A04888111FCA6E50008E08A1;
+					};
+				};
+			};
+			buildConfigurationList = A048880D1FCA6E50008E08A1 /* Build configuration list for PBXProject "EuropaRecipt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A04888091FCA6E50008E08A1;
+			productRefGroup = A04888131FCA6E50008E08A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A04888111FCA6E50008E08A1 /* EuropaRecipt */,
+				A04888251FCA6E50008E08A1 /* EuropaReciptTests */,
+				A04888301FCA6E50008E08A1 /* EuropaReciptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A04888101FCA6E50008E08A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04888201FCA6E50008E08A1 /* LaunchScreen.storyboard in Resources */,
+				A048881D1FCA6E50008E08A1 /* Assets.xcassets in Resources */,
+				A048881B1FCA6E50008E08A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04888241FCA6E50008E08A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A048882F1FCA6E50008E08A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B4C3E80F400F6D77AC21899 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EuropaRecipt/Pods-EuropaRecipt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F4E41047D50CED3D69A11F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EuropaRecipt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C065A386417FFD22A3668F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EuropaRecipt/Pods-EuropaRecipt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EuropaRecipt/Pods-EuropaRecipt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A048880E1FCA6E50008E08A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04888181FCA6E50008E08A1 /* ViewController.swift in Sources */,
+				A04888161FCA6E50008E08A1 /* AppDelegate.swift in Sources */,
+				A032ABE81FCCFA2900C98E1C /* EropaTableViewCell.swift in Sources */,
+				A032ABEA1FCCFA6E00C98E1C /* EropaTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04888221FCA6E50008E08A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A048882B1FCA6E50008E08A1 /* EuropaReciptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A048882D1FCA6E50008E08A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04888361FCA6E50008E08A1 /* EuropaReciptUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A04888281FCA6E50008E08A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A04888111FCA6E50008E08A1 /* EuropaRecipt */;
+			targetProxy = A04888271FCA6E50008E08A1 /* PBXContainerItemProxy */;
+		};
+		A04888331FCA6E50008E08A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A04888111FCA6E50008E08A1 /* EuropaRecipt */;
+			targetProxy = A04888321FCA6E50008E08A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A04888191FCA6E50008E08A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A048881A1FCA6E50008E08A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A048881E1FCA6E50008E08A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A048881F1FCA6E50008E08A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A04888381FCA6E50008E08A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A04888391FCA6E50008E08A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A048883B1FCA6E50008E08A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AF46D4F7FFB500541E766C /* Pods-EuropaRecipt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = EuropaRecipt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.EuropaRecipt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A048883C1FCA6E50008E08A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C995ADCFF076B38021D6B760 /* Pods-EuropaRecipt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = EuropaRecipt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.EuropaRecipt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A048883E1FCA6E50008E08A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = EuropaReciptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.EuropaReciptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuropaRecipt.app/EuropaRecipt";
+			};
+			name = Debug;
+		};
+		A048883F1FCA6E50008E08A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = EuropaReciptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.EuropaReciptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuropaRecipt.app/EuropaRecipt";
+			};
+			name = Release;
+		};
+		A04888411FCA6E50008E08A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = EuropaReciptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.EuropaReciptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EuropaRecipt;
+			};
+			name = Debug;
+		};
+		A04888421FCA6E50008E08A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = EuropaReciptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.EuropaReciptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EuropaRecipt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A048880D1FCA6E50008E08A1 /* Build configuration list for PBXProject "EuropaRecipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04888381FCA6E50008E08A1 /* Debug */,
+				A04888391FCA6E50008E08A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A048883A1FCA6E50008E08A1 /* Build configuration list for PBXNativeTarget "EuropaRecipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A048883B1FCA6E50008E08A1 /* Debug */,
+				A048883C1FCA6E50008E08A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A048883D1FCA6E50008E08A1 /* Build configuration list for PBXNativeTarget "EuropaReciptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A048883E1FCA6E50008E08A1 /* Debug */,
+				A048883F1FCA6E50008E08A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04888401FCA6E50008E08A1 /* Build configuration list for PBXNativeTarget "EuropaReciptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04888411FCA6E50008E08A1 /* Debug */,
+				A04888421FCA6E50008E08A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A048880A1FCA6E50008E08A1 /* Project object */;
+}
